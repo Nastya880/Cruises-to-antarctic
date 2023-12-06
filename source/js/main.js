@@ -1,28 +1,41 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+// import {iosVhFix} from './utils/ios-vh-fix';
+// import {initModals} from './modules/modals/init-modals';
+// import {Form} from './modules/form-validate/form';
+
+import './burger/locomotive-scroll';
+import {Burger} from './burger/burger';
+import {initLocomotiveScroll} from './burger/init-locomotive-scroll';
+
+window.addEventListener('DOMContentLoaded', () => {
+  initLocomotiveScroll();
+
+  window.addEventListener('load', () => {
+    const burger = new Burger();
+    burger.init();
+  });
+});
+
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-  // ---------------------------------
+//   // Utils
+//   // ---------------------------------
 
-  iosVhFix();
+//   iosVhFix();
+//   // Modules
+//   // ---------------------------------
 
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
-  });
-});
+//   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+//   // в load следует добавить скрипты, не участвующие в работе первого экрана
+//   window.addEventListener('load', () => {
+//     initModals();
+//     const form = new Form();
+//     window.form = form;
+//     form.init();
+//   });
+// });
 
 // ---------------------------------
 
