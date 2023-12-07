@@ -1417,6 +1417,13 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1023px) {
+  .footer {
+    min-height: 120px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 
 .footer__menu-wrapper {
   display: -webkit-box;
@@ -1430,6 +1437,21 @@ button,
   margin-top: 8px;
   fill: #f9fbfd;
 }
+@media (max-width: 1023px) {
+  .footer__logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: -14px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer__logo svg {
+    width: 38px;
+    height: 20px;
+  }
+}
 
 .footer__menu-list {
   list-style: none;
@@ -1440,12 +1462,22 @@ button,
       flex-wrap: wrap;
   max-width: 638px;
 }
+@media (max-width: 1023px) {
+  .footer__menu-list {
+    max-width: 488px;
+  }
+}
 
 .footer__menu-item {
   margin-right: 33px;
 }
 .footer__menu-item:last-child {
   margin-right: 0;
+}
+@media (max-width: 1023px) {
+  .footer__menu-item {
+    margin-right: 23px;
+  }
 }
 
 .footer__menu-item-link {
@@ -1456,9 +1488,20 @@ button,
   font-weight: 500;
   line-height: normal;
 }
+@media (max-width: 1023px) {
+  .footer__menu-item-link {
+    font-size: 12px;
+  }
+}
 
 .footer__social {
   margin-top: 10px;
+}
+@media (max-width: 1023px) {
+  .footer__social {
+    margin-top: 4px;
+    margin-right: 2px;
+  }
 }
 
 .footer__social-list {
@@ -1470,6 +1513,11 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 1023px) {
+  .footer__social-list {
+    max-width: 130px;
+  }
+}
 
 .footer__social-item {
   margin-right: 27px;
@@ -1477,9 +1525,29 @@ button,
 .footer__social-item:last-child {
   margin-right: 0;
 }
+@media (max-width: 1023px) {
+  .footer__social-item {
+    margin-right: 22.37px;
+  }
+  .footer__social-item:last-child {
+    margin-right: 0;
+  }
+}
 
-.footer__social-item-link {
+.footer__social-item-link svg {
   fill: #f9fbfd;
+}
+@media (max-width: 1023px) {
+  .footer__social-item-link svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer__social-item-link--ok svg {
+    width: 9.64px;
+  }
 }
 
 /* @mixin hover-focus {
