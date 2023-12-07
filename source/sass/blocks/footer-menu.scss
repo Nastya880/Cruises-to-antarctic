@@ -1,0 +1,27 @@
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 33px;
+  max-width: 638px;
+  // z-index: 10000;
+  // background-color: #fff;
+
+}
+
+.footer__menu-item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__menu-item-link {
+  color: $color-alice-blue;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

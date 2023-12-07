@@ -1,0 +1,29 @@
+.footer__social {
+  // align-self: center;
+  margin-top: 10px;
+}
+
+.footer__social-list {
+  list-style: none;
+  // width: 113px;
+  // max-width: 100%;
+  max-width: 309px;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  // gap: 27px;
+  // margin-top: 20px;
+
+}
+
+.footer__social-item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__social-item-link {
+  fill: $color-alice-blue;
+}

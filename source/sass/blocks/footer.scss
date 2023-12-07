@@ -1,0 +1,22 @@
+.footer {
+  background-color: $color-tangaroa;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 104px;
+  min-height: 138px;
+  // padding-top: 50px;
+  padding-left: 103px;
+  align-items: center;
+}
+
+.footer__menu-wrapper {
+  // border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 40px;
+}
+
+.footer__logo {
+  margin-top: 8px;
+  fill: $color-alice-blue;
+}
