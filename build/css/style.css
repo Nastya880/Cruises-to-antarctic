@@ -1229,13 +1229,11 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 35px 6px 10px 36px;
-  width: 90%;
+  padding: 35px 103px 10px;
 }
 @media (max-width: 1023px) {
   .header {
-    padding: 30px 0;
-    width: 88%;
+    padding: 30px 46px;
   }
 }
 @media (max-width: 767px) {
@@ -1410,9 +1408,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 104px;
+  padding-right: 7.5%;
   min-height: 138px;
-  padding-left: 103px;
+  padding-left: 7.5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1420,8 +1418,8 @@ button,
 @media (max-width: 1023px) {
   .footer {
     min-height: 120px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
 @media (max-width: 767px) {
@@ -1444,8 +1442,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .footer__menu-wrapper {
@@ -1466,10 +1462,10 @@ button,
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-right: -14px;
+    margin-right: -16px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .footer__logo {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1500,7 +1496,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 638px;
+  max-width: 100%;
 }
 @media (max-width: 1023px) {
   .footer__menu-list {

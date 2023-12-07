@@ -2,10 +2,12 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 638px;
+  max-width: 100%;
+  // background-color: #fff;
 
   @include vp-1023 {
     max-width: 488px;
+    // background-color: #fff;
   }
 
   @include vp-767 {
