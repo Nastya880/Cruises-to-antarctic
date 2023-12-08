@@ -1,11 +1,82 @@
-// .intro picture {
-//   position: absolute;
-//   top: -10px;
-//   left: 0;
-//   z-index: -4;
-//   min-width: 100%;
-// }
+.intro {
+  padding:  225px 0 263px 166px;
+  margin-top: -90px;
+  min-height: 650px;
+  background-color: $color-tangaroa;
+  background: image-set(
+    url("../img/intro-bg.webp") 1x,
+    url("../img/intro-bg@2x.webp") 2x,
+    url("../img/intro-bg.jpg") 1x,
+    url("../img/intro-bg@2x.jpg") 2x,
+  )  no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba($color-default-black, 0.25);
 
-// .header {
-//   position: relative;
-// }
+  @include vp-1023 {
+    min-height: 638px;
+    padding: 229px 0 265.7px 20px;
+    background: image-set(
+      url("../img/intro-bg-tablet.webp") 1x,
+      url("../img/intro-bg-tablet@2x.webp") 2x,
+      url("../img/intro-bg-tablet.jpg") 1x,
+      url("../img/intro-bg-tablet@2x.jpg") 2x,
+    ) no-repeat cover center;
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+    padding: 173px 0 169px;
+    background: image-set(
+      url("../img/intro-bg-mobile.webp") 1x,
+      url("../img/intro-bg-mobile@2x.webp") 2x,
+      url("../img/intro-bg-mobile.jpg") 1x,
+      url("../img/intro-bg-mobile@2x.jpg") 2x,
+    ) no-repeat cover center;
+    background-blend-mode: multiply;
+    background-color: lightgray;
+  }
+}
+
+.intro h2 {
+  color: $color-alice-blue;
+  text-shadow: 0px 4px 4px rgba($color-default-black, 0.25);
+  font-family: $ff-montserrat;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: normal;
+
+  @include vp-1023 {
+    text-shadow: none;
+    font-size: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 125%; /* 45px */
+  }
+}
+
+.intro p {
+  color: $color-alice-blue;
+  text-shadow: 0px 4px 4px rgba($color-default-black, 0.25);
+  font-family: $ff-montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -33px;
+
+  @include vp-1023 {
+    text-shadow: none;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+
+  @include vp-767 {
+    margin-top: -19px;
+    display: block;
+    max-width: 216px;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+  }
+}

@@ -1,9 +1,9 @@
 .header {
-  background-color: $color-tangaroa;
+  // background-color: $color-tangaroa;
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   padding: 35px 103px 10px;
+  z-index: 10;
 
   @include vp-1023 {
     padding: 30px 46px;
@@ -36,11 +36,7 @@
     margin-right: 1px;
     width: 24px;
     height: 24px;
-    // color: red;
-    // fill: red;
-    // background-color: green;
-    // z-index: 100;
-    background: url("../img/svg/icon-burger.svg") $color-tangaroa no-repeat center;
+    background: url("../img/svg/icon-burger.svg") no-repeat center;
     border: none;
   }
 }

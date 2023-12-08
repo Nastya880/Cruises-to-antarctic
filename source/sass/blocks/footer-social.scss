@@ -1,5 +1,4 @@
 .footer__social {
-  // align-self: center;
   margin-top: 10px;
 
   @include vp-1023 {
@@ -18,8 +17,6 @@
 .footer__social-list {
   list-style: none;
   max-width: 309px;
-  // min-width: 209px;
-  // max-width: 309px;
   display: flex;
   flex-wrap: wrap;
 
@@ -66,10 +63,3 @@
     width: 9.64px;
   }
 }
-
-// .footer__social-item-link svg {
-//   @include vp-1023 {
-//     width: 16px;
-//     height: 16px;
-//   }
-// }
