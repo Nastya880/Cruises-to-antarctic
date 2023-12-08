@@ -1,13 +1,8 @@
-.footer__menu-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.footer__menu-list.menu-list {
   max-width: 100%;
-  // background-color: #fff;
 
   @include vp-1023 {
     max-width: 488px;
-    // background-color: #fff;
   }
 
   @include vp-767 {
@@ -16,9 +11,7 @@
 
 }
 
-.footer__menu-item {
-  margin-right: 33px;
-
+.footer__menu-item.menu-item {
   &:last-child {
     margin-right: 0;
   }
@@ -30,17 +23,12 @@
   @include vp-767 {
     margin-right: 0;
     margin-bottom: 8px;
+    display: block;
+    max-width: 130px;
   }
 }
 
-.footer__menu-item-link {
-  color: $color-alice-blue;
-  font-family: $ff-montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-
+.footer__menu-item-link.menu-item-link {
   @include vp-1023 {
     font-size: 12px;
   }

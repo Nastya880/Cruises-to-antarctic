@@ -1,0 +1,18 @@
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  margin-right: 33px;
+}
+
+.menu-item-link {
+  color: $color-alice-blue;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
