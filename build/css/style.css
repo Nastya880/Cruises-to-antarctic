@@ -1765,6 +1765,12 @@ button,
     padding: 68px 47px 82px 45px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__container {
+    padding: 37px 15px 49px;
+  }
+}
+
 .advantages img {
   background-color: #d8d8d9;
   z-index: -1000;
@@ -1795,6 +1801,7 @@ button,
 @media (max-width: 767px) {
   .advantages h2 {
     font-size: 24px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1811,6 +1818,13 @@ button,
     gap: 30px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
 .advantages__item {
   background-color: #f9fbfd;
   display: -webkit-box;
@@ -1830,8 +1844,19 @@ button,
     padding: 27px 10px 5px 20px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item {
+    padding: 25px 14px 6px 20px;
+  }
+}
+
 .advantages__item svg {
   fill: #011c40;
+}
+@media (max-width: 767px) {
+  .advantages__item svg {
+    margin-bottom: 2px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1840,18 +1865,21 @@ button,
     height: 26px;
   }
 }
+
 @media (max-width: 1023px) {
   .advantages__item--all-inclusive svg {
     width: 27px;
     height: 26px;
   }
 }
+
 @media (max-width: 1023px) {
   .advantages__item--excursion-tours svg {
     width: 36px;
     height: 26px;
   }
 }
+
 .advantages__item h3 {
   color: #011c40;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1867,6 +1895,13 @@ button,
     margin-bottom: -4px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item h3 {
+    margin-bottom: -6px;
+    width: 75%;
+  }
+}
+
 .advantages__item p {
   color: #011c40;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1881,12 +1916,22 @@ button,
 }
 .advantages__item--all-inclusive p {
   display: block;
-  max-width: 285px;
+  max-width: 95%;
+}
+@media (max-width: 767px) {
+  .advantages__item--all-inclusive p {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 1023px) {
   .advantages__item--excursion-tours h3 {
     margin-bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item--excursion-tours h3 {
+    margin-bottom: -4px;
   }
 }
 
