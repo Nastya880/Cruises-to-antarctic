@@ -1,3 +1,6 @@
+.description {
+  background-color: $color-alice-blue;
+}
 .description__container {
   padding: 117px 103px 145px 103px;
   display: grid;
@@ -26,6 +29,7 @@
 }
 
 .description img {
+  // margin-top: -2px;
   @include vp-1023 {
     width: 324px;
     height: 174.15px;
