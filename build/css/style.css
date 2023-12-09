@@ -1959,7 +1959,7 @@ button,
 }
 @media (max-width: 1023px) {
   .catalog__container {
-    padding: 70px 60px 85px 60px;
+    padding: 70px 60px 83px 60px;
   }
 }
 @media (max-width: 767px) {
@@ -2003,7 +2003,7 @@ button,
   gap: 30px;
   margin-left: -40px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1279px) {
   .catalog__list {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
@@ -2116,6 +2116,7 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .catalog__item:hover h3 {
   margin-left: 25px;
 }
@@ -2152,10 +2153,11 @@ button,
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   margin-bottom: -11px;
   margin-top: -3px;
 }
+
 .catalog__info-item--route {
   margin-top: -8px;
 }
@@ -2171,7 +2173,7 @@ button,
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
 }
 
 .catalog__info-item--price {
@@ -2187,7 +2189,7 @@ button,
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
   z-index: 50;
   margin-bottom: 35px;
   text-align: center;
