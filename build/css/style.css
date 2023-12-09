@@ -1955,7 +1955,17 @@ button,
 }
 
 .catalog__container {
-  padding: 62px 118px 120px;
+  padding: 62px 118px 104px;
+}
+@media (max-width: 1023px) {
+  .catalog__container {
+    padding: 70px 60px 85px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__container {
+    padding: 40px 25px 50px 25px;
+  }
 }
 
 .catalog h2 {
@@ -1968,6 +1978,17 @@ button,
   text-align: center;
   margin-bottom: 49px;
 }
+@media (max-width: 1023px) {
+  .catalog h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog h2 {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
 
 .catalog__list {
   list-style: none;
@@ -1975,12 +1996,24 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (minmax(386px, -webkit-fit-content))[2];
-  -ms-grid-rows: (minmax(386px, fit-content))[2];
-  grid-template-rows: repeat(2, minmax(386px, -webkit-fit-content));
-  grid-template-rows: repeat(2, minmax(386px, fit-content));
+  -ms-grid-rows: (minmax(386px, -webkit-fit-content))[auto];
+  -ms-grid-rows: (minmax(386px, fit-content))[auto];
+  grid-template-rows: repeat(auto, minmax(386px, -webkit-fit-content));
+  grid-template-rows: repeat(auto, minmax(386px, fit-content));
   gap: 30px;
   margin-left: -40px;
+}
+@media (max-width: 1023px) {
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .catalog__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog__item {
@@ -1988,12 +2021,11 @@ button,
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
+  width: 260px;
   padding-bottom: 0;
   margin: 0;
-  padding-top: 20px;
-  width: 260px;
+  padding-top: 10px;
   position: relative;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2001,6 +2033,18 @@ button,
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+@media (max-width: 1023px) {
+  .catalog__item {
+    width: 309px;
+    padding-top: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item {
+    width: 93%;
+    padding-top: 14.5px;
+  }
 }
 
 .catalog__item h3 {
@@ -2017,12 +2061,25 @@ button,
   margin-left: 30px;
   margin-bottom: 22.5px;
 }
+@media (max-width: 1023px) {
+  .catalog__item h3 {
+    margin-bottom: 27px;
+    margin-left: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item h3 {
+    margin-left: 25px;
+    margin-bottom: 18px;
+  }
+}
 
 .catalog__item img {
   position: absolute;
   top: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   height: 100%;
 }
 
@@ -2036,7 +2093,17 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 29px 0 0px 25px;
+  padding: 29px 0 0 25px;
+}
+@media (max-width: 1023px) {
+  .catalog__item:hover {
+    padding: 29px 12px 0 35px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item:hover {
+    padding: 29px 2px 25px 24px;
+  }
 }
 .catalog__item:hover picture {
   display: none;
@@ -2058,13 +2125,11 @@ button,
   margin: 0;
   margin-bottom: -5px;
 }
-
 .catalog__info-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .catalog__info h4 {
   color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2074,7 +2139,6 @@ button,
   line-height: 140%; /* 19.6px */
   margin-bottom: -12px;
 }
-
 .catalog__info p {
   color: #d8d8d9;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2084,11 +2148,12 @@ button,
   line-height: 140%; /* 19.6px */
   margin-bottom: -6px;
 }
-
 .catalog__info-button {
   display: block;
   background-color: #f9fbfd;
-  padding: 9px 47px 9px 46px;
+  padding: 9px 46px 10px 46px;
+  margin-top: 30px;
+  margin-bottom: 0;
   margin-right: 25px;
   color: #011c40;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2097,8 +2162,20 @@ button,
   font-weight: 600;
   line-height: 150%; /* 21px */
   z-index: 50;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-bottom: 9px;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .catalog__info-button {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    padding: 9px 61px 9px 61px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__info-button {
+    padding: 9px 65px 9px 59px;
+  }
 }
 
 /* @mixin hover-focus {
