@@ -370,6 +370,39 @@
           </div>
         </section>
 
+        <section class="reservation">
+          <picture>
+            <source type="image/webp" srcset="img/reservation-bg.webp 1x, img/reservation-bg@2x.webp 2x">
+            <img src="img/reservation-bg@2x.jpg" width="1366" height="555" alt="пейзаж - облака">
+          </picture>
+          <div class="reservation__container container">
+            <div class="reservation__description">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="reservation__form">
+              <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+
+                <label class="visually-hidden" for="phone">Введите Ваш Телефон</label>
+                <input type="phone" name="phone" id="phone" placeholder="Телефон" required>
+
+                <label class="visually-hidden" for="email">Введите Ваш email</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+                <div class="form__agreement">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="agreement" required checked>
+                    <span class="form__agreement-check-mark"></span>
+                    <span class="form__agreement-description">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="form__button" type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer container">
         <div class="footer__menu-wrapper">

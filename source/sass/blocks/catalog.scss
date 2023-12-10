@@ -8,6 +8,7 @@
   @include vp-1023 {
     padding: 70px 60px 83px 60px;
   }
+
   @include vp-767 {
     padding: 40px 25px 50px 25px;
   }
@@ -27,6 +28,7 @@
   @include vp-1023 {
     font-size: 26px;
   }
+
   @include vp-767 {
     font-size: 24px;
     margin-bottom: 28px;
@@ -112,23 +114,25 @@
 }
 
 
-.catalog__item:hover {
-    background-color: $color-tangaroa;
+.catalog__item:hover,
+.catalog__item:focus-within {
+  background-color: $color-tangaroa;
+  flex-direction: column;
+
+  & picture {
+    display: none;
+  }
+
+  & .catalog__info {
+    visibility: visible;
+    display: flex;
     flex-direction: column;
-
-    & picture {
-      display: none;
-    }
-
-    & .catalog__info {
-      visibility: visible;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    justify-content: space-between;
+  }
 }
 
-.catalog__item:hover h3 {
+.catalog__item:hover h3,
+.catalog__item:focus-within h3 {
   margin-left: 25px;
 
   @include vp-1023 {
@@ -183,8 +187,6 @@
 
 .catalog__info-item--price {
   margin-bottom: 25px;
-  @include vp-1023 {}
-  @include vp-767 {}
 }
 
 .catalog__info-button {

@@ -1,0 +1,57 @@
+.reservation {
+  position: relative;
+}
+
+.reservation__container {
+  padding: 50px 163px 50px 163px;
+  display: grid;
+  // grid-template-columns: 497px 403px;
+  grid-template-columns: 1fr 403px;
+  gap: 144px;
+
+  @include vp-1023 {}
+  @include vp-767 {}
+}
+
+.reservation img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -10;
+}
+
+.reservation__description {
+  align-self: center;
+}
+
+.reservation__description h2 {
+  color: $color-tangaroa;
+  font-family: $ff-montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+
+  @include vp-1023 {
+    font-size: 34px;
+    // line-height: 150%; /* 51px */
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 130%; /* 31.2px */
+  }
+}
+
+.reservation__description p {
+  color: $color-tangaroa;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  @include vp-1023 {
+  }
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+  }
+}

@@ -2093,17 +2093,20 @@ button,
   visibility: hidden;
 }
 
-.catalog__item:hover {
+.catalog__item:hover,
+.catalog__item:focus-within {
   background-color: #011c40;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.catalog__item:hover picture {
+.catalog__item:hover picture,
+.catalog__item:focus-within picture {
   display: none;
 }
-.catalog__item:hover .catalog__info {
+.catalog__item:hover .catalog__info,
+.catalog__item:focus-within .catalog__info {
   visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2117,16 +2120,19 @@ button,
           justify-content: space-between;
 }
 
-.catalog__item:hover h3 {
+.catalog__item:hover h3,
+.catalog__item:focus-within h3 {
   margin-left: 25px;
 }
 @media (max-width: 1023px) {
-  .catalog__item:hover h3 {
+  .catalog__item:hover h3,
+.catalog__item:focus-within h3 {
     margin-left: 34px;
   }
 }
 @media (max-width: 767px) {
-  .catalog__item:hover h3 {
+  .catalog__item:hover h3,
+.catalog__item:focus-within h3 {
     margin-left: 25px;
   }
 }
@@ -2179,6 +2185,7 @@ button,
 .catalog__info-item--price {
   margin-bottom: 25px;
 }
+
 .catalog__info-button {
   display: block;
   background-color: #f9fbfd;
@@ -2226,6 +2233,181 @@ button,
   }
 }
 
+.reservation {
+  position: relative;
+}
+
+.reservation__container {
+  padding: 50px 163px 50px 163px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 403px;
+  grid-template-columns: 1fr 403px;
+  gap: 144px;
+}
+.reservation img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -10;
+}
+
+.reservation__description {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.reservation__description h2 {
+  color: #011c40;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+}
+@media (max-width: 1023px) {
+  .reservation__description h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .reservation__description h2 {
+    font-size: 24px;
+    line-height: 130%; /* 31.2px */
+  }
+}
+
+.reservation__description p {
+  color: #011c40;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+@media (max-width: 767px) {
+  .reservation__description p {
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+  }
+}
+
+.reservation__form {
+  background-color: #011c40;
+  padding: 50px;
+}
+
+.reservation__form h3 {
+  color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+@media (max-width: 767px) {
+  .reservation__form h3 {
+    line-height: 140%; /* 25.2px */
+  }
+}
+
+form {
+  max-width: 403px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  min-height: 43px;
+  margin-bottom: 20px;
+  padding: 11px 16px;
+  color: rgba(1, 28, 64, 0.7);
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+form input::-webkit-input-placeholder {
+  color: #011c40;
+}
+form input::-moz-placeholder {
+  color: #011c40;
+}
+form input:-ms-input-placeholder {
+  color: #011c40;
+}
+form input::-ms-input-placeholder {
+  color: #011c40;
+}
+form input::placeholder {
+  color: #011c40;
+}
+
+.form__agreement {
+  position: relative;
+  min-height: 18px;
+  margin-bottom: 30px;
+}
+
+.form__agreement label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.form__agreement-check-mark {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+@media (max-width: 767px) {
+  .form__agreement-check-mark {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form__agreement input:checked + .form__agreement-check-mark {
+  background-image: url("../img/svg/agree.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__agreement-description {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 23px;
+  color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 130%; /* 13px */
+}
+@media (max-width: 767px) {
+  .form__agreement-description {
+    padding-left: 28px;
+    line-height: 120%;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  background-color: #f9fbfd;
+  color: #011c40;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
