@@ -129,7 +129,7 @@ form input {
   border: none;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10.4px;
+  padding-bottom: 12.4px;
   background-color: $color-alice-blue;
   color: $color-tangaroa;
   font-family: $ff-montserrat;
@@ -139,6 +139,6 @@ form input {
 
   @include vp-1023 {}
   @include vp-767 {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 }
