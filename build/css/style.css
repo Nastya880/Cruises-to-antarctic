@@ -1475,13 +1475,14 @@ button,
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 7%;
   height: 100%;
   opacity: 0;
   visibility: hidden;
@@ -1489,7 +1490,8 @@ button,
 }
 
 .overlay.is-active {
-  opacity: 0.5;
+  opacity: 1;
+  background-color: rgba(0, 43, 102, 0.5);
   visibility: visible;
 }
 
@@ -1516,8 +1518,6 @@ button,
 .header__wrapper {
   position: relative;
   height: 100%;
-  background-color: #011c40;
-  z-index: -10;
 }
 
 .header__wrapper img {

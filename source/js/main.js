@@ -1,9 +1,11 @@
-import './burger/locomotive-scroll';
-import {Burger} from './burger/burger';
-import {initLocomotiveScroll} from './burger/init-locomotive-scroll';
+import './modules/burger/locomotive-scroll';
+import {Burger} from './modules/burger/burger';
+import {initLocomotiveScroll} from './modules/burger/init-locomotive-scroll';
+import {initSmoothScroll} from './modules/initSmoothScroll';
 
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
+  initSmoothScroll();
 
   window.addEventListener('load', () => {
     const burger = new Burger();
