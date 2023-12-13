@@ -10,18 +10,13 @@
   }
 
   @include vp-767 {
-    padding: 38px 25px 50px 25px;
+    padding: 38px 25px 49px 25px;
   }
 }
 
 .catalog h2 {
-  color: $color-tangaroa;
-  font-family: $ff-montserrat;
-  font-size: 28px;
+  @include font($ff-montserrat, 600, 28px, $color-tangaroa, 150%);
   font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 42px */
-
   text-align: center;
   margin-bottom: 49px;
 
@@ -85,15 +80,10 @@
 }
 
 .catalog__item h3 {
-
   justify-self: center;
   display: block;
-  color: $color-alice-blue;
-  font-family: $ff-montserrat;
-  font-size: 18px;
+  @include font($ff-montserrat, 500, 18px, $color-alice-blue, 150%);
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 27px */
   z-index: 2;
   margin-left: 30px;
   margin-bottom: 22.5px;
@@ -111,12 +101,8 @@
 
 .catalog__info h4 {
   display: none;
-  color: $color-alice-blue;
-  font-family: $ff-montserrat;
-  font-size: 18px;
+  @include font($ff-montserrat, 500, 18px, $color-alice-blue, 150%);
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 27px */
   margin-left: 24px;
   margin-top: 19px;
 
@@ -196,12 +182,8 @@
 }
 
 .catalog__info h5 {
-  color: $color-alice-blue;
-  font-family: $ff-montserrat;
-  font-size: 14px;
+  @include font($ff-montserrat, 500, 14px, $color-alice-blue, 140%);
   font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
   margin-bottom: -11px;
   margin-top: -3px;
 }
@@ -219,12 +201,8 @@
 }
 
 .catalog__info p {
-  color: $color-quartz;
-  font-family: $ff-montserrat;
-  font-size: 14px;
+  @include font($ff-montserrat, 400, 14px, $color-quartz, 140%);
   font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
 }
 
 .catalog__info-item--price {
@@ -232,16 +210,12 @@
 }
 
 .catalog__info-button {
+  @include font($ff-montserrat, 600, 14px, $color-tangaroa, 150%);
   display: block;
   background-color: $color-alice-blue;
   padding: 10px 46px 9px 48px;
   margin: 0 auto;
-  color: $color-tangaroa;
-  font-family: $ff-montserrat;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
   z-index: 50;
   margin-bottom: 35px;
   text-align: center;
@@ -255,26 +229,10 @@
   }
 
   @include vp-767 {
-    padding-left: 52px;
+    margin-top: -1px;
+    padding-left: 51px;
     padding-right: 52px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     margin-bottom: 35.5px;
   }
 }
-
-// .catalog__info--olympia .catalog__info-button,
-// .catalog__info--odissey .catalog__info-button,
-// .catalog__info--minion .catalog__info-button {
-//   margin-bottom: 17px;
-
-//   @include vp-1023 {}
-//   @include vp-767 {
-//     margin-bottom: 52px;
-//   }
-// }
-
-// .catalog__info--olympia .catalog__info-button {
-//   @include vp-767 {
-//     margin-bottom: 15px;
-//   }
-// }

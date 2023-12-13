@@ -61,7 +61,7 @@
 }
 
 .header__menu-list.menu-list {
-  margin: 0;
+  margin: 0 -2px 0 0;
   // border: 2px solid green;
 
   @include vp-767 {

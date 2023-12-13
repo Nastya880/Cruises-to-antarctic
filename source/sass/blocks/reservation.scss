@@ -11,13 +11,13 @@
 
   @include vp-1023 {
     grid-template-columns: 1fr;
-    padding: 77px 173px 100px 175px;
+    padding: 77px 173px 101px 175px;
     gap: 32px;
   }
 
   @include vp-767 {
-    padding: 38px 6px 65px 7px;
-    gap: 17px;
+    padding: 39px 6px 65px 7px;
+    gap: 16px;
   }
 }
 

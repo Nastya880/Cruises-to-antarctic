@@ -17,15 +17,11 @@
 }
 
 .reservation__form h3 {
-  color: $color-alice-blue;
-  font-family: $ff-montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%; /* 27px */
+  @include font($ff-montserrat, 500, 18px, $color-alice-blue, 150%);
   margin-bottom: 28px;
 
   @include vp-1023 {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
   @include vp-767 {
     text-align: center;
@@ -45,6 +41,7 @@ form {
 }
 
 form input {
+  @include font($ff-montserrat, 400, 14px, $color-tangaroa, 150%);
   display: block;
   background-color: $color-alice-blue;
   border: none;
@@ -52,17 +49,10 @@ form input {
   min-height: 43px;
   margin-bottom: 20px;
   padding: 11px 16px;
-  color: $color-tangaroa;
-
-  font-family: $ff-montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
 
   &::placeholder {
     color: $color-tangaroa;
-    color: rgba(1, 28, 64, 0.70);
+    color: rgba($color-tangaroa, 0.70);
   }
 }
 
@@ -140,8 +130,10 @@ form input {
   line-height: 150%; /* 21px */
 
   @include vp-1023 {
-    padding-bottom: 10.5px;
+    // padding-top: px;
+    padding-bottom: 11px;
   }
+
   @include vp-767 {
     padding-bottom: 12px;
   }

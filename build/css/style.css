@@ -591,122 +591,6 @@ button,
   opacity: 0.8;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.modal::-webkit-scrollbar {
-  display: none;
-}
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-}
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-@media (max-width: 767px) {
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-}
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-.modal--responsive .modal__content {
-  width: 100%;
-}
-.modal--fit-content .modal__content {
-  width: auto;
-}
-@media (max-width: 767px) {
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-}
-.modal--no-scale {
-  -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
-}
-.modal--preload {
-  -webkit-transition: none;
-  transition: none;
-}
-.modal.is-active {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1333,7 +1217,7 @@ button,
 }
 
 .header__menu-list.menu-list {
-  margin: 0;
+  margin: 0 -2px 0 0;
 }
 @media (max-width: 767px) {
   .header__menu-list.menu-list {
@@ -1428,7 +1312,7 @@ button,
   .footer__logo {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: 40px 0 -1px 40px;
+    margin: 40px 0 3px 40px;
   }
 }
 
@@ -1438,6 +1322,7 @@ button,
 @media (max-width: 1023px) {
   .footer__menu-list.menu-list {
     max-width: 488px;
+    margin-top: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -1474,18 +1359,19 @@ button,
 
 .footer__social {
   margin-top: 10px;
+  margin-right: 2px;
 }
 @media (max-width: 1023px) {
   .footer__social {
     margin-top: 4px;
-    margin-right: 2px;
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
   .footer__social {
     margin-top: -18px;
     margin-right: 0;
-    margin-left: -25px;
+    margin-left: -28px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1493,15 +1379,20 @@ button,
 
 .footer__social-list {
   list-style: none;
-  max-width: 309px;
+  min-width: 312px;
+  max-width: 312px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 @media (max-width: 1023px) {
   .footer__social-list {
+    min-width: 130px;
     max-width: 130px;
   }
 }
@@ -1613,12 +1504,12 @@ button,
 }
 @media (max-width: 1023px) {
   .intro__container {
-    padding: 140px 47px 264px 45px;
+    padding: 140px 47px 257px 45px;
   }
 }
 @media (max-width: 767px) {
   .intro__container {
-    padding: 83px 40px 169px 15px;
+    padding: 83px 40px 164px 15px;
   }
 }
 
@@ -1646,12 +1537,12 @@ button,
 }
 
 .intro h2 {
-  color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 54px;
   font-weight: 700;
+  font-size: 54px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
   line-height: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1023px) {
   .intro h2 {
@@ -1667,13 +1558,13 @@ button,
 }
 
 .intro p {
-  color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 20px;
-  font-style: normal;
   font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
   line-height: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
   margin-top: -33px;
 }
 @media (max-width: 1023px) {
@@ -1705,13 +1596,13 @@ button,
 }
 @media (max-width: 1023px) {
   .description__container {
-    padding: 93px 45px 77px 45px;
+    padding: 99px 45px 77px 45px;
     gap: 30px;
   }
 }
 @media (max-width: 767px) {
   .description__container {
-    padding: 62px 15px 85.12px 15px;
+    padding: 67px 15px 85.12px 15px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 27px;
@@ -1730,11 +1621,15 @@ button,
   }
 }
 
+.description img {
+  margin-top: -2px;
+}
 @media (max-width: 1023px) {
   .description img {
     width: 324px;
     height: 174.15px;
     margin-right: 2px;
+    margin-top: 1px;
   }
 }
 @media (max-width: 767px) {
@@ -1745,11 +1640,11 @@ button,
 }
 
 .description h2 {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 28px;
   font-weight: 600;
-  line-height: 150%; /* 42px */
+  font-size: 28px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
 }
 @media (max-width: 1023px) {
   .description h2 {
@@ -1768,22 +1663,23 @@ button,
 }
 
 .description p {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 150%; /* 24px */
+  font-size: 16px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
 }
+
 .advantages {
   position: relative;
 }
 
 .advantages__container {
-  padding: 85px 103px 105px;
+  padding: 87px 103px 105px;
 }
 @media (max-width: 1023px) {
   .advantages__container {
-    padding: 68px 47px 84px 45px;
+    padding: 69px 47px 84px 45px;
   }
 }
 @media (max-width: 767px) {
@@ -1804,12 +1700,12 @@ button,
 }
 
 .advantages h2 {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 28px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 42px */
+  font-size: 28px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
+  font-style: normal;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1902,12 +1798,12 @@ button,
 }
 
 .advantages__item h3 {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  font-size: 18px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
+  font-style: normal;
   margin-bottom: -5px;
 }
 @media (max-width: 1023px) {
@@ -1924,17 +1820,18 @@ button,
 }
 
 .advantages__item p {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 140%;
 }
 @media (max-width: 1023px) {
   .advantages__item p {
     line-height: 20.2px; /* 19.6px */
   }
 }
+
 .advantages__item--all-inclusive p {
   display: block;
   max-width: 95%;
@@ -1970,17 +1867,17 @@ button,
 }
 @media (max-width: 767px) {
   .catalog__container {
-    padding: 38px 25px 50px 25px;
+    padding: 38px 25px 49px 25px;
   }
 }
 
 .catalog h2 {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 28px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 42px */
+  font-size: 28px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
+  font-style: normal;
   text-align: center;
   margin-bottom: 49px;
 }
@@ -2064,12 +1961,12 @@ button,
   -ms-grid-column-align: center;
       justify-self: center;
   display: block;
-  color: #f9fbfd;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  font-size: 18px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
+  line-height: 150%;
+  font-style: normal;
   z-index: 2;
   margin-left: 30px;
   margin-bottom: 22.5px;
@@ -2089,12 +1986,12 @@ button,
 
 .catalog__info h4 {
   display: none;
-  color: #f9fbfd;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  font-size: 18px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
+  line-height: 150%;
+  font-style: normal;
   margin-left: 24px;
   margin-top: 19px;
 }
@@ -2193,12 +2090,12 @@ button,
 }
 
 .catalog__info h5 {
-  color: #f9fbfd;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 500;
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
   line-height: 140%;
+  font-style: normal;
   margin-bottom: -11px;
   margin-top: -3px;
 }
@@ -2218,12 +2115,12 @@ button,
 }
 
 .catalog__info p {
-  color: #d8d8d9;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #d8d8d9;
   line-height: 140%;
+  font-style: normal;
 }
 
 .catalog__info-item--price {
@@ -2231,16 +2128,16 @@ button,
 }
 
 .catalog__info-button {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
   display: block;
   background-color: #f9fbfd;
   padding: 10px 46px 9px 48px;
   margin: 0 auto;
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
   z-index: 50;
   margin-bottom: 35px;
   text-align: center;
@@ -2256,9 +2153,10 @@ button,
 }
 @media (max-width: 767px) {
   .catalog__info-button {
-    padding-left: 52px;
+    margin-top: -1px;
+    padding-left: 51px;
     padding-right: 52px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     margin-bottom: 35.5px;
   }
 }
@@ -2279,14 +2177,14 @@ button,
   .reservation__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 77px 173px 100px 175px;
+    padding: 77px 173px 101px 175px;
     gap: 32px;
   }
 }
 @media (max-width: 767px) {
   .reservation__container {
-    padding: 38px 6px 65px 7px;
-    gap: 17px;
+    padding: 39px 6px 65px 7px;
+    gap: 16px;
   }
 }
 
@@ -2389,16 +2287,16 @@ button,
 }
 
 .reservation__form h3 {
-  color: #f9fbfd;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  font-size: 18px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
+  line-height: 150%;
   margin-bottom: 28px;
 }
 @media (max-width: 1023px) {
   .reservation__form h3 {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
 }
 @media (max-width: 767px) {
@@ -2419,6 +2317,11 @@ form {
 }
 
 form input {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
   display: block;
   background-color: #f9fbfd;
   border: none;
@@ -2426,12 +2329,6 @@ form input {
   min-height: 43px;
   margin-bottom: 20px;
   padding: 11px 16px;
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
 }
 form input::-webkit-input-placeholder {
   color: #011c40;
@@ -2542,7 +2439,7 @@ form input::placeholder {
 }
 @media (max-width: 1023px) {
   .form__button {
-    padding-bottom: 10.5px;
+    padding-bottom: 11px;
   }
 }
 @media (max-width: 767px) {
@@ -2571,7 +2468,7 @@ form input::placeholder {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 100px 45px 101px;
+    padding: 100px 45px 100px;
   }
 }
 @media (max-width: 767px) {
@@ -2581,7 +2478,7 @@ form input::placeholder {
     -ms-grid-rows: auto 0 auto;
         grid-template-areas: "description" "map";
     gap: 0;
-    padding: 20px 15px 66px;
+    padding: 24px 15px 66px;
   }
 }
 
@@ -2600,12 +2497,12 @@ form input::placeholder {
 }
 
 .contacts h2 {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  font-size: 18px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
+  font-style: normal;
 }
 @media (max-width: 1023px) {
   .contacts h2 {
@@ -2623,7 +2520,7 @@ form input::placeholder {
 }
 @media (max-width: 1023px) {
   .contacts__description {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -2688,19 +2585,19 @@ form input::placeholder {
 }
 @media (max-width: 767px) {
   .contacts__item--address svg {
-    width: 31px;
-    height: 36px;
+    width: 28px;
+    height: 35px;
   }
 }
 
 .contacts__item p,
 .contacts__item address {
-  color: #011c40;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 24px */
+  font-size: 16px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  line-height: 150%;
+  font-style: normal;
   margin: 0;
 }
 .contacts__item address {

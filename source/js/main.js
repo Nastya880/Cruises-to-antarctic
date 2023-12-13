@@ -1,7 +1,3 @@
-// import {iosVhFix} from './utils/ios-vh-fix';
-// import {initModals} from './modules/modals/init-modals';
-// import {Form} from './modules/form-validate/form';
-
 import './burger/locomotive-scroll';
 import {Burger} from './burger/burger';
 import {initLocomotiveScroll} from './burger/init-locomotive-scroll';

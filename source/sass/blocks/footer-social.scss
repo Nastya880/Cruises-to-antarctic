@@ -1,26 +1,30 @@
 .footer__social {
   margin-top: 10px;
+  margin-right: 2px;
 
   @include vp-1023 {
     margin-top: 4px;
-    margin-right: 2px;
+    margin-right: 0;
   }
 
   @include vp-767 {
     margin-top: -18px;
     margin-right: 0;
-    margin-left: -25px;
+    margin-left: -28px;
     align-self: flex-start;
   }
 }
 
 .footer__social-list {
   list-style: none;
-  max-width: 309px;
+  min-width: 312px;
+  max-width: 312px;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 
   @include vp-1023 {
+    min-width: 130px;
     max-width: 130px;
   }
 
