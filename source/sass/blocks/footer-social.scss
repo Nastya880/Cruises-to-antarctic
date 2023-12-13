@@ -56,6 +56,12 @@
 
 .footer__social-item-link svg {
   fill: $color-alice-blue;
+
+  &:hover,
+  &:active {
+    fill: rgba($color-alice-blue, 0.8);
+  }
+
   @include vp-1023 {
     width: 16px;
     height: 16px;

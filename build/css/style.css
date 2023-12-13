@@ -1426,6 +1426,9 @@ button,
 .footer__social-item-link svg {
   fill: #f9fbfd;
 }
+.footer__social-item-link svg:hover, .footer__social-item-link svg:active {
+  fill: rgba(249, 251, 253, 0.8);
+}
 @media (max-width: 1023px) {
   .footer__social-item-link svg {
     width: 16px;
@@ -1477,6 +1480,10 @@ button,
   line-height: normal;
   scroll-behavior: smooth;
 }
+.menu-item-link:hover, .menu-item-link:active {
+  color: #d8d8d9;
+  text-shadow: 0 0 2px rgba(1, 28, 64, 0.8);
+}
 
 .overlay {
   position: fixed;
@@ -1491,7 +1498,6 @@ button,
 
 .overlay.is-active {
   opacity: 1;
-  background-color: rgba(0, 43, 102, 0.5);
   visibility: visible;
 }
 
@@ -1944,6 +1950,10 @@ button,
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+.catalog__item:hover, .catalog__item:active {
+  -webkit-box-shadow: 0 0 35px #011c40;
+          box-shadow: 0 0 35px #011c40;
+}
 @media (max-width: 1023px) {
   .catalog__item {
     width: 309px;
@@ -2142,6 +2152,11 @@ button,
   margin-bottom: 35px;
   text-align: center;
   max-width: 90%;
+}
+.catalog__info-button:hover, .catalog__info-button:active {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
 }
 @media (max-width: 1023px) {
   .catalog__info-button {
@@ -2436,6 +2451,11 @@ form input::placeholder {
   font-size: 14px;
   font-weight: 600;
   line-height: 150%; /* 21px */
+}
+.form__button:hover, .form__button:focus, .form__button:active {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 1023px) {
   .form__button {

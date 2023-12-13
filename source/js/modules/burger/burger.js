@@ -1,5 +1,6 @@
 import scrollLock from './scroll-lock';
 import {FocusLock} from './focus-lock';
+// import {initSmoothScroll} from '../initSmoothScroll';
 
 export class Burger {
   constructor() {
@@ -66,6 +67,7 @@ export class Burger {
   _onDocumentClick(evt) {
     if (evt.target.hasAttribute('data-overlay') || evt.target.hasAttribute('data-menu-link') || evt.target.hasAttribute('data-close-menu')) {
       this._closeMenu();
+      // initSmoothScroll();
     }
   }
 }

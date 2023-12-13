@@ -16,4 +16,10 @@
   font-weight: 500;
   line-height: normal;
   scroll-behavior: smooth;
+
+  &:hover,
+  &:active {
+    color: $color-quartz;
+    text-shadow: 0 0 2px rgba($color-tangaroa, 0.8);
+  }
 }

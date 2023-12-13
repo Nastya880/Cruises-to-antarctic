@@ -30,54 +30,55 @@
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
-    <div class="wrapper" id="test">
-       <div class="header__wrapper">
-        <picture>
-          <source media="(max-width: 767px)" type="image/jpg" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
-          <source media="(max-width: 767px)" type="image/webp" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" type="image/jpg" srcset="img/intro-bg-tablet.jpg 1x, img/intro-bg-tablet@2x.jpg 2x">
-          <source media="(max-width: 1023px)" type="image/webp" srcset="img/intro-bg-tablet.webp 1x, img/intro-bg-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/intro-bg.webp 1x, img/intro-bg@2x.webp 2x">
-          <img src="img/intro-bg@2x.jpg" width="1366" height="650" alt="пейзаж Антарктики">
-        </picture>
-        <header class="header container" data-header>
-          <div class="header__logo-wrapper">
-            <a class="header__logo logo" href="#" aria-label="Круизы в Антарктику">
-              <svg width="70" height="38" data-close-menu>
-                <use xlink:href="img/sprite.svg#logo"></use>
-              </svg>
-            </a>
-            <button class="header__button-open" type="button" aria-label="Открыть меню" data-burger>
-            </button>
-            <button class="header__button-close" type="button" aria-label="Закрыть меню" data-close-menu></button>
-          </div>
+    <div class="wrapper">
+        <div class="header__wrapper">
+          <picture>
+            <source media="(max-width: 767px)" type="image/jpg" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" type="image/jpg" srcset="img/intro-bg-tablet.jpg 1x, img/intro-bg-tablet@2x.jpg 2x">
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/intro-bg-tablet.webp 1x, img/intro-bg-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/intro-bg.webp 1x, img/intro-bg@2x.webp 2x">
+            <img src="img/intro-bg@2x.jpg" width="1366" height="650" alt="пейзаж Антарктики">
+          </picture>
+          <header class="header container" data-header>
+            <div class="header__logo-wrapper">
+              <a class="header__logo logo" href="#" aria-label="Круизы в Антарктику">
+                <svg width="70" height="38" data-close-menu>
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <button class="header__button-open" type="button" aria-label="Открыть меню" data-burger>
+              </button>
+              <button class="header__button-close" type="button" aria-label="Закрыть меню" data-close-menu></button>
+            </div>
 
-          <nav class="header__menu">
-            <ul class="header__menu-list menu-list">
-              <li class="header__menu-item menu-item">
-                <a class="header__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества" data-menu-link id="advantag">Преимущества</a>
-              </li>
-              <li class="header__menu-item menu-item">
-                <a class="header__menu-item-link menu-item-link" href="#" aria-label="Направления" data-menu-link>Направления</a>
-              </li>
-              <li class="header__menu-item menu-item">
-                <a class="header__menu-item-link  menu-item-link" href="#catalog" aria-label="Ближайшие круизы" data-menu-link>Ближайшие круизы</a>
-              </li>
-              <li class="header__menu-item menu-item">
-                <a class="header__menu-item-link menu-item-link" href="#contacts" aria-label="Контакты" data-menu-link>Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="overlay" data-overlay></div>
+            <nav class="header__menu">
+              <ul class="header__menu-list menu-list">
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества" data-menu-link data-menu-href>Преимущества</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#catalog" aria-label="Направления" data-menu-link data-menu-href>Направления</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link  menu-item-link" href="#catalog" aria-label="Ближайшие круизы" data-menu-link data-menu-href>Ближайшие круизы</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#contacts" aria-label="Контакты" data-menu-link data-menu-href>Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <div class="overlay" data-overlay></div>
 
-        <section class="intro">
-          <div class="intro__container container">
-            <h2>Круизы в&nbsp;Антарктику</h2>
-            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
-          </div>
-        </section>
+          <section class="intro">
+            <div class="intro__container container">
+              <h2>Круизы в&nbsp;Антарктику</h2>
+              <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+            </div>
+          </section>
       </div>
+
 
       <main>
         <h1 class="visually-hidden">Круизы в Антарктику</h1>
@@ -433,16 +434,16 @@
             <nav class="footer__menu">
               <ul class="footer__menu-list menu-list">
                 <li class="footer__menu-item menu-item">
-                  <a class="footer__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества">Преимущества</a>
+                  <a class="footer__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества" data-menu-href>Преимущества</a>
                 </li>
                 <li class="footer__menu-item menu-item">
-                  <a class="footer__menu-item-link menu-item-link" href="#" aria-label="Направления">Направления</a>
+                  <a class="footer__menu-item-link menu-item-link" href="#catalog" aria-label="Направления" data-menu-href>Направления</a>
                 </li>
                 <li class="footer__menu-item menu-item">
-                  <a class="footer__menu-item-link menu-item-link" href="#catalog" aria-label="Ближайшие круизы">Ближайшие круизы</a>
+                  <a class="footer__menu-item-link menu-item-link" href="#catalog" aria-label="Ближайшие круизы" data-menu-href>Ближайшие круизы</a>
                 </li>
                 <li class="footer__menu-item menu-item">
-                  <a class="footer__menu-item-link menu-item-link" href="#contacts" aria-label="Контакты">Контакты</a>
+                  <a class="footer__menu-item-link menu-item-link" href="#contacts" aria-label="Контакты" data-menu-href>Контакты</a>
                 </li>
               </ul>
             </nav>
