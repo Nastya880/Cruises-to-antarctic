@@ -1,0 +1,241 @@
+.catalog {
+  background-color: $color-alice-blue;
+}
+
+.catalog__container {
+  padding: 62px 118px 104px;
+
+  @include vp-1023 {
+    padding: 68px 60px 83px 60px;
+  }
+
+  @include vp-767 {
+    padding: 37px 25px 49px 25px;
+  }
+}
+
+.catalog h2 {
+  @include font($ff-montserrat, 600, 28px, $color-tangaroa, 150%);
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 49px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, minmax(386px, fit-content));
+  gap: 30px;
+  margin-left: -40px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.catalog__item {
+  background-color: $color-tangaroa;
+  height: 386px;
+  max-height: 386px;
+  overflow: auto;
+  width: 260px;
+  padding-bottom: 0;
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0 35px rgba($color-tangaroa, 1);
+  }
+
+  @include vp-1023 {
+    width: 309px;
+    padding-top: 6px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 14.5px;
+  }
+}
+
+.catalog__item h3 {
+  @include font($ff-montserrat, 500, 18px, $color-alice-blue, 150%);
+  justify-self: center;
+  display: block;
+  font-style: normal;
+  z-index: 2;
+  margin-left: 30px;
+  margin-bottom: 22.5px;
+
+  @include vp-1023 {
+    margin-bottom: 28px;
+    margin-left: 35px;
+  }
+
+  @include vp-767 {
+    margin-left: 25px;
+    margin-bottom: 17px;
+  }
+}
+
+.catalog__info h4 {
+  @include font($ff-montserrat, 500, 18px, $color-alice-blue, 150%);
+  display: none;
+  font-style: normal;
+  margin-left: 24px;
+  margin-top: 19px;
+
+  @include vp-1023 {
+    margin-left: 35px;
+    margin-top: 22px;
+  }
+
+  @include vp-767 {
+    margin-left: 26px;
+    margin-top: 15px;
+  }
+}
+
+.catalog__item img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__info {
+  display: none;
+}
+
+.catalog__item:hover,
+.catalog__item:focus-within {
+  background-color: $color-tangaroa;
+  flex-direction: column;
+
+  & picture,
+  & h3 {
+    display: none;
+  }
+
+  & h4 {
+    display: block;
+  }
+
+  & .catalog__info {
+    max-height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item:hover h3,
+.catalog__item:focus-within h3 {
+  margin-left: 25px;
+
+  @include vp-1023 {
+    margin-left: 34px;
+  }
+
+  @include vp-767 {
+    margin-left: 25px;
+  }
+}
+
+.catalog__info-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 25px;
+
+  @include vp-1023 {
+    padding-left: 33px;
+    margin-left: 2px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+  }
+}
+
+.catalog__info h5 {
+  @include font($ff-montserrat, 500, 14px, $color-alice-blue, 140%);
+  font-style: normal;
+  margin-bottom: -11px;
+  margin-top: -3px;
+}
+
+.catalog__info-item--route {
+  margin-top: -10px;
+
+  @include vp-1023 {
+    margin-top: -10px;
+  }
+
+  @include vp-767 {
+    margin-top: -10px;
+  }
+}
+
+.catalog__info p {
+  @include font($ff-montserrat, 400, 14px, $color-quartz, 140%);
+  font-style: normal;
+}
+
+.catalog__info-item--price {
+  margin-bottom: 25px;
+}
+
+.catalog__info-button {
+  @include font($ff-montserrat, 600, 14px, $color-tangaroa, 150%);
+  display: block;
+  background-color: $color-alice-blue;
+  padding: 10px 46px 9px 48px;
+  margin: 0 auto;
+  font-style: normal;
+  z-index: 50;
+  margin-bottom: 35px;
+  text-align: center;
+  max-width: 90%;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba($color-default-white, 1);
+  }
+
+  @include vp-1023 {
+    padding: 10px 61px 8px 61px;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    margin-top: -1px;
+    margin-bottom: 35.5px;
+    padding: 10px 52px 9px 51px;
+  }
+}

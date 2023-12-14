@@ -1,0 +1,112 @@
+.header__wrapper {
+  position: relative;
+  min-height: 650px;
+
+  @include vp-1023 {
+    min-height: 638px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+    margin-bottom: 10px;
+  }
+}
+
+.header {
+  padding-right: 40px;
+  padding-left: 71px;
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    padding: 25px 46px;
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+    padding: 17px 15px;
+  }
+}
+
+.header__logo {
+  margin-top: 3px;
+
+  @include vp-1023 {
+    margin-top: 5px;
+    // margin-right: 20px;
+  }
+
+  @include vp-767 {
+    margin-top: 4px;
+  }
+}
+
+.header.is-active {
+  @include vp-767 {
+    background-color: $color-alice-blue;
+    position: fixed;
+    z-index: 100;
+    align-items: flex-start;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 89%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba($color-tangaroa, 0.5);
+      pointer-events: none;
+    }
+
+    svg {
+      fill: $color-tangaroa;
+      margin-bottom: 33px;
+    }
+
+    & + .intro h2 {
+      padding-top: 68px;
+      padding-bottom: 78px;
+    }
+  }
+}
+
+.header__button-burger {
+  padding: 0;
+  margin-bottom: 3px;
+  background-color: transparent;
+  z-index: 10;
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-image: url("../img/svg/icon-burger.svg");
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.header.is-active .header__button-burger {
+  display: none;
+
+  @include vp-767 {
+    width: 17px;
+    display: block;
+    margin-top: 6px;
+    height: 25px;
+    background: url("../img/svg/icon-close.svg") no-repeat;
+    border: none;
+  }
+}
