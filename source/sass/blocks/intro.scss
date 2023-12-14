@@ -10,25 +10,6 @@
   }
 }
 
-// .intro__container {
-//   padding: 135px 198px 263px 198px;
-
-//   @include vp-1023 {
-//     padding: 140px 47px 257px 45px;
-//   }
-
-//   @include vp-767 {
-//     padding: 83px 40px 164px 15px;
-//   }
-// }
-
-// .header__wrapper {
-//   position: relative;
-//   height: 100%;
-//   // background-color: $color-tangaroa;
-//   // z-index: -100000;
-// }
-
 .header__wrapper img {
   background-color: $color-tangaroa;
   z-index: -10;
