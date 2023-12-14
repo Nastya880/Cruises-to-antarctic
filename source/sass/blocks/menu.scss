@@ -25,5 +25,10 @@
 
   @include vp-767 {
     color: $color-tangaroa;
+
+    &:hover,
+    &:active {
+      color: $color-quartz;
+    }
   }
 }

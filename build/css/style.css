@@ -1007,6 +1007,9 @@ button,
   .menu-item-link {
     color: #011c40;
   }
+  .menu-item-link:hover, .menu-item-link:active {
+    color: #d8d8d9;
+  }
 }
 
 .overlay {
@@ -1076,7 +1079,7 @@ button,
 @media (max-width: 767px) {
   .intro h2 {
     font-size: 36px;
-    line-height: 125%; /* 45px */
+    line-height: 125%;
   }
 }
 
@@ -1101,8 +1104,8 @@ button,
 @media (max-width: 767px) {
   .intro p {
     font-size: 16px;
-    line-height: 140%; /* 22.4px */
-    width: 232px;
+    line-height: 140%;
+    width: 80%;
   }
 }
 
@@ -1175,14 +1178,14 @@ button,
     display: block;
     max-width: 214px;
     font-size: 26px;
-    line-height: 140%; /* 36.4px */
+    line-height: 140%;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
   .description h2 {
     font-size: 24px;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%;
   }
 }
 
@@ -1332,7 +1335,7 @@ button,
 }
 @media (max-width: 1023px) {
   .advantages__item h3 {
-    line-height: 25.2px; /* 25.2px */
+    line-height: 25.2px;
     margin-bottom: -4px;
   }
 }
@@ -1352,7 +1355,7 @@ button,
 }
 @media (max-width: 1023px) {
   .advantages__item p {
-    line-height: 20.2px; /* 19.6px */
+    line-height: 20.2px;
   }
 }
 
@@ -1486,14 +1489,14 @@ button,
 }
 
 .catalog__item h3 {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: block;
   font-weight: 500;
   font-size: 18px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #f9fbfd;
   line-height: 150%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: block;
   font-style: normal;
   z-index: 2;
   margin-left: 30px;
@@ -1513,12 +1516,12 @@ button,
 }
 
 .catalog__info h4 {
-  display: none;
   font-weight: 500;
   font-size: 18px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #f9fbfd;
   line-height: 150%;
+  display: none;
   font-style: normal;
   margin-left: 24px;
   margin-top: 19px;
@@ -1568,7 +1571,6 @@ button,
 }
 .catalog__item:hover .catalog__info,
 .catalog__item:focus-within .catalog__info {
-  display: block;
   max-height: 100%;
   overflow: auto;
   display: -webkit-box;
@@ -1678,19 +1680,15 @@ button,
 }
 @media (max-width: 1023px) {
   .catalog__info-button {
-    padding-right: 61px;
-    padding-left: 61px;
-    padding-bottom: 8px;
+    padding: 10px 61px 8px 61px;
     margin-bottom: 37px;
   }
 }
 @media (max-width: 767px) {
   .catalog__info-button {
     margin-top: -1px;
-    padding-left: 51px;
-    padding-right: 52px;
-    padding-bottom: 9px;
     margin-bottom: 35.5px;
+    padding: 10px 52px 9px 51px;
   }
 }
 
@@ -1756,20 +1754,20 @@ button,
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: 100%; /* 60px */
+  line-height: 100%;
   margin: 0;
   margin-top: 20px;
 }
 @media (max-width: 1023px) {
   .reservation__description h2 {
     font-size: 34px;
-    line-height: 92%; /* 51px */
+    line-height: 92%;
   }
 }
 @media (max-width: 767px) {
   .reservation__description h2 {
     font-size: 24px;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%;
     text-align: center;
     max-width: 65%;
   }
@@ -1780,7 +1778,7 @@ button,
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
   display: block;
   max-width: 352px;
 }
@@ -1794,7 +1792,7 @@ button,
 @media (max-width: 767px) {
   .reservation__description p {
     font-size: 16px;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     max-width: 257px;
     text-align: center;
     padding: 0;
@@ -1835,7 +1833,7 @@ button,
 @media (max-width: 767px) {
   .reservation__form h3 {
     text-align: center;
-    line-height: 140%; /* 25.2px */
+    line-height: 140%;
     margin-bottom: 28px;
   }
 }
@@ -1864,23 +1862,18 @@ form input {
   padding: 11px 16px;
 }
 form input::-webkit-input-placeholder {
-  color: #011c40;
   color: rgba(1, 28, 64, 0.7);
 }
 form input::-moz-placeholder {
-  color: #011c40;
   color: rgba(1, 28, 64, 0.7);
 }
 form input:-ms-input-placeholder {
-  color: #011c40;
   color: rgba(1, 28, 64, 0.7);
 }
 form input::-ms-input-placeholder {
-  color: #011c40;
   color: rgba(1, 28, 64, 0.7);
 }
 form input::placeholder {
-  color: #011c40;
   color: rgba(1, 28, 64, 0.7);
 }
 @media (max-width: 1023px) {
@@ -1973,7 +1966,7 @@ form input::placeholder {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
 }
 .form__button:hover, .form__button:focus, .form__button:active {
   cursor: pointer;
@@ -2053,6 +2046,7 @@ form input::placeholder {
     margin-top: 18px;
   }
 }
+
 .contacts__description {
   display: -ms-grid;
   display: grid;
@@ -2107,7 +2101,7 @@ form input::placeholder {
 }
 @media (max-width: 1023px) {
   .contacts__item {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2165,6 +2159,7 @@ form input::placeholder {
   font-style: normal;
   margin: 0;
 }
+
 .contacts__item address {
   margin-bottom: 16px;
 }

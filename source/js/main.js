@@ -1,4 +1,4 @@
-import {initBurgerMenu} from './modules/burger';
+import {initBurgerMenu} from './modules/initBurger';
 import {initSmoothScroll} from './modules/initSmoothScroll';
 
 window.addEventListener('DOMContentLoaded', () => {

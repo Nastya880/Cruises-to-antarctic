@@ -1,6 +1,7 @@
 .description {
   background-color: $color-alice-blue;
 }
+
 .description__container {
   padding: 122px 103px 145px 103px;
   display: grid;
@@ -37,6 +38,7 @@
     margin-right: 2px;
     margin-top: 1px;
   }
+
   @include vp-767 {
     width: 290px;
     height: 155.88px;
@@ -45,18 +47,18 @@
 
 .description h2 {
   @include font($ff-montserrat, 600, 28px, $color-tangaroa, 168%);
-  // margin-bottom: 10px;
 
   @include vp-1023 {
     display: block;
     max-width: 214px;
     font-size: 26px;
-    line-height: 140%; /* 36.4px */
+    line-height: 140%;
     margin-bottom: 10px;
   }
+
   @include vp-767 {
     font-size: 24px;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%;
   }
 }
 

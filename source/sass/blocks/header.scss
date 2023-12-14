@@ -14,7 +14,6 @@
 }
 
 .header {
-  // background-color: red;
   padding-right: 40px;
   padding-left: 71px;
   padding-top: 32px;
@@ -24,7 +23,6 @@
 
   @include vp-1023 {
     padding: 25px 46px;
-    // padding: 25px 0px 0 20px;
   }
 
   @include vp-767 {
@@ -45,6 +43,7 @@
     margin-top: 4px;
   }
 }
+
 .header.is-active {
   @include vp-767 {
     background-color: $color-alice-blue;
@@ -105,7 +104,6 @@
   @include vp-767 {
     width: 17px;
     display: block;
-    // width: 25px;
     margin-top: 6px;
     height: 25px;
     background: url("../img/svg/icon-close.svg") no-repeat;

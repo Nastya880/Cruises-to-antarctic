@@ -45,7 +45,6 @@
   display: grid;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
-  // border: 2px solid red;
   gap: 40px;
 
   @include vp-1023 {
@@ -67,6 +66,7 @@
   @include vp-1023 {
     padding: 27px 10px 5px 20px;
   }
+
   @include vp-767 {
     padding: 25px 14px 6px 20px;
   }
@@ -107,9 +107,10 @@
   margin-bottom: -5px;
 
   @include vp-1023 {
-    line-height: 25.2px; /* 25.2px */
+    line-height: 25.2px;
     margin-bottom: -4px;
   }
+
   @include vp-767 {
     margin-bottom: -6px;
     width: 75%;
@@ -120,7 +121,7 @@
   @include font($ff-montserrat, 400, 14px, $color-tangaroa, 140%);
 
   @include vp-1023 {
-    line-height: 20.2px; /* 19.6px */
+    line-height: 20.2px;
   }
 }
 
