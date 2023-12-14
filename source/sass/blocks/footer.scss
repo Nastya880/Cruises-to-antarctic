@@ -5,13 +5,14 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  padding-right: 7.5%;
+  // padding-right: 7.5%;
   min-height: 138px;
   // padding-top: 50px;
-  padding-left: 7.5%;
+  // padding-left: 7.6%;
   align-items: center;
   // margin-bottom: 0;
   // min-width: 100%; ////
+  padding: 0 103px;
 
   @include vp-1023 {
     min-height: 120px;

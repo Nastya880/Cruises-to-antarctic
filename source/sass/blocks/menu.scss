@@ -22,4 +22,8 @@
     color: $color-quartz;
     text-shadow: 0 0 2px rgba($color-tangaroa, 0.8);
   }
+
+  @include vp-767 {
+    color: $color-tangaroa;
+  }
 }
