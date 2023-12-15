@@ -3,14 +3,17 @@
 }
 
 .catalog__container {
-  padding: 62px 118px 104px;
+  padding: 0 118px 104px;
+  margin-top: 84px;
 
   @include vp-1023 {
-    padding: 68px 60px 83px 60px;
+    padding: 0 60px 83px 60px;
+    margin-top: 91px;
   }
 
   @include vp-767 {
     padding: 37px 25px 49px 25px;
+    margin-top: 0;
   }
 }
 

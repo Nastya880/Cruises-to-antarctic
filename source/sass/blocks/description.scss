@@ -3,13 +3,17 @@
 }
 
 .description__container {
-  padding: 122px 103px 145px 103px;
+  padding: 0 103px 0 103px;
+  margin-top: 122px;
+  margin-bottom: 145px;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 88px;
 
   @include vp-1023 {
-    padding: 89px 45px 77px 45px;
+    padding: 0 45px 0 45px;
+    margin-top: 89px;
+    margin-bottom: 77px;
     gap: 30px;
   }
 

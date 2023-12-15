@@ -3,10 +3,11 @@
 }
 
 .advantages__container {
-  padding: 87px 103px 105px;
+  padding: 87px 103px 106px;
 
   @include vp-1023 {
     padding: 69px 47px 90px 45px;
+    /////////
   }
 
   @include vp-767 {
