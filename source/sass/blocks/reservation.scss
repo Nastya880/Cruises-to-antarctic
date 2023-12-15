@@ -3,9 +3,9 @@
 }
 
 .reservation__container {
-  padding: 50px 163px 51px;
+  padding: 49px 163px 50px;
   display: grid;
-  grid-template-columns: 1fr 403px;
+  grid-template-columns: 47.4% 403px;
   gap: 144px;
 
   @include vp-1023 {

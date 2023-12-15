@@ -3,10 +3,11 @@
 
   @include vp-1023 {
     max-width: 488px;
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   @include vp-767 {
+    margin-top: 12px;
     flex-direction: column;
   }
 }

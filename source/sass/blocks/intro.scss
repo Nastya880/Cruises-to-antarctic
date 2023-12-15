@@ -2,15 +2,15 @@
   padding: 190px 198px 263px 70px;
 
   @include vp-1023 {
-    padding: 188px 47px 257px 45px;
+    padding: 188px 40px 257px 21px;
   }
 
   @include vp-767 {
-    padding: 110px 40px 164px 15px;
+    padding: 110px 0 164px;
   }
 }
 
-.header__wrapper img {
+.wrapper__header img {
   background-color: $color-tangaroa;
   z-index: -10;
   position: absolute;
