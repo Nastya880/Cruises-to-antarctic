@@ -444,7 +444,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 a {
@@ -1600,7 +1600,7 @@ form input::placeholder {
   }
 
   .advantages__container {
-    padding: 69px 47px 84px 45px;
+    padding: 69px 47px 90px 45px;
   }
 
   .advantages h2 {
@@ -1610,6 +1610,7 @@ form input::placeholder {
 
   .advantages__list {
     gap: 30px;
+    margin-bottom: 10px;
   }
 
   .advantages__item {
@@ -1985,7 +1986,9 @@ form input::placeholder {
   }
 
   .description__container {
-    padding: 58px 15px 85.12px 15px;
+    padding: 0 15px 0 15px;
+    margin-top: 58px;
+    margin-bottom: 85.12px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 27px;
@@ -1997,12 +2000,13 @@ form input::placeholder {
   }
 
   .description h2 {
+    max-width: 95%;
     font-size: 24px;
     line-height: 140%;
   }
 
   .advantages__container {
-    padding: 37px 15px 49px;
+    padding: 37px 15px 39px;
   }
 
   .advantages h2 {
@@ -2013,6 +2017,7 @@ form input::placeholder {
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin-bottom: 16px;
   }
 
   .advantages__item {
@@ -2021,6 +2026,10 @@ form input::placeholder {
 
   .advantages__item svg {
     margin-bottom: 2px;
+  }
+
+  .advantages__item--excursion-tours {
+    margin-bottom: 10px;
   }
 
   .advantages__item h3 {

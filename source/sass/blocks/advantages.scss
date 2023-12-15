@@ -6,11 +6,11 @@
   padding: 87px 103px 105px;
 
   @include vp-1023 {
-    padding: 69px 47px 84px 45px;
+    padding: 69px 47px 90px 45px;
   }
 
   @include vp-767 {
-    padding: 37px 15px 49px;
+    padding: 37px 15px 39px;
   }
 }
 
@@ -49,10 +49,12 @@
 
   @include vp-1023 {
     gap: 30px;
+    margin-bottom: 10px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    margin-bottom: 16px;
   }
 }
 
@@ -77,6 +79,12 @@
 
   @include vp-767 {
     margin-bottom: 2px;
+  }
+}
+
+.advantages__item--excursion-tours {
+  @include vp-767 {
+    margin-bottom: 10px;
   }
 }
 
