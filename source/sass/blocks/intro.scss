@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 110px 0 164px;
+    padding: 110px 0 101px;
   }
 }
 
@@ -18,10 +18,6 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-
-  @include vp-767 {
-    top: 1px;
-  }
 }
 
 .intro h2 {
