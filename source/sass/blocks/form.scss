@@ -29,7 +29,7 @@
   }
 }
 
-form {
+.reservation__form form {
   max-width: 403px;
 
   @include vp-1023 {
@@ -37,7 +37,7 @@ form {
   }
 }
 
-form input {
+.reservation__form input {
   @include font($ff-montserrat, 400, 14px, $color-tangaroa, 150%);
   display: block;
   background-color: $color-alice-blue;

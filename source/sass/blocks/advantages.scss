@@ -46,8 +46,6 @@
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  // margin-bottom: 100px;
-  // background-color: red;
 
   @include vp-1023 {
     gap: 30px;

@@ -34,7 +34,6 @@
 
   @include vp-1023 {
     margin-top: 5px;
-    // margin-right: 20px;
   }
 
   @include vp-767 {
@@ -52,7 +51,7 @@
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 89%;
+    width: 88.8%;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -69,13 +68,20 @@
 
     svg {
       fill: $color-tangaroa;
-      margin-bottom: 33px;
+      margin-bottom: 31.5px;
     }
 
-    & + .intro h2 {
+    & + .intro h1 {
       padding-top: 68px;
       padding-bottom: 78px;
     }
+  }
+}
+
+.header.is-active + .intro h1 {
+  @include vp-767 {
+    padding-top: 68px;
+    padding-bottom: 0;
   }
 }
 

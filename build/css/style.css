@@ -635,7 +635,7 @@ button,
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 89%;
+    width: 88.8%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -651,11 +651,18 @@ button,
   }
   .header.is-active svg {
     fill: #011c40;
-    margin-bottom: 33px;
+    margin-bottom: 31.5px;
   }
-  .header.is-active + .intro h2 {
+  .header.is-active + .intro h1 {
     padding-top: 68px;
     padding-bottom: 78px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header.is-active + .intro h1 {
+    padding-top: 68px;
+    padding-bottom: 0;
   }
 }
 
@@ -1052,7 +1059,7 @@ button,
   height: 100%;
 }
 
-.intro h2 {
+.intro h1 {
   font-weight: 700;
   font-size: 54px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1064,14 +1071,14 @@ button,
   margin-left: 95px;
 }
 @media (max-width: 1023px) {
-  .intro h2 {
+  .intro h1 {
     margin-left: 0;
     text-shadow: none;
     font-size: 50px;
   }
 }
 @media (max-width: 767px) {
-  .intro h2 {
+  .intro h1 {
     font-size: 36px;
     line-height: 125%;
   }
@@ -1847,16 +1854,16 @@ button,
   }
 }
 
-form {
+.reservation__form form {
   max-width: 403px;
 }
 @media (max-width: 1023px) {
-  form {
+  .reservation__form form {
     max-width: none;
   }
 }
 
-form input {
+.reservation__form input {
   font-weight: 400;
   font-size: 14px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1870,23 +1877,23 @@ form input {
   margin-bottom: 20px;
   padding: 11px 16px;
 }
-form input::-webkit-input-placeholder {
+.reservation__form input::-webkit-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
-form input::-moz-placeholder {
+.reservation__form input::-moz-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
-form input:-ms-input-placeholder {
+.reservation__form input:-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
-form input::-ms-input-placeholder {
+.reservation__form input::-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
-form input::placeholder {
+.reservation__form input::placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 @media (max-width: 1023px) {
-  form input {
+  .reservation__form input {
     padding: 4px 16px;
   }
 }

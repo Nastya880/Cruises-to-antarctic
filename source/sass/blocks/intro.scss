@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-.intro h2 {
+.intro h1 {
   @include font($ff-montserrat, 700, 54px, $color-alice-blue, normal);
   text-shadow: 0 4px 4px rgba($color-default-black, 0.25);
   margin: 0;
