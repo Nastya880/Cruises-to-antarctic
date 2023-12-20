@@ -547,7 +547,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1395,16 +1395,16 @@ button,
 }
 
 .catalog__container {
-  padding: 62px 118px 104px;
+  padding: 82px 118px 104px;
 }
 @media (max-width: 1023px) {
   .catalog__container {
-    padding: 68px 60px 83px 60px;
+    padding: 89px 60px 83px 60px;
   }
 }
 @media (max-width: 767px) {
   .catalog__container {
-    padding: 37px 26px 49px 25px;
+    padding: 58px 26px 49px 25px;
   }
 }
 
@@ -1416,7 +1416,7 @@ button,
   line-height: 150%;
   font-style: normal;
   text-align: center;
-  margin-bottom: 49px;
+  margin: 0 0 51px 0;
 }
 @media (max-width: 1023px) {
   .catalog h2 {
@@ -1437,12 +1437,8 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (minmax(386px, -webkit-fit-content))[auto];
-  -ms-grid-rows: (minmax(386px, fit-content))[auto];
-  grid-template-rows: repeat(auto, minmax(386px, -webkit-fit-content));
-  grid-template-rows: repeat(auto, minmax(386px, fit-content));
   gap: 30px;
-  margin-left: -40px;
+  padding: 0;
 }
 @media (max-width: 1279px) {
   .catalog__list {
@@ -1468,7 +1464,7 @@ button,
   height: 386px;
   max-height: 386px;
   overflow: auto;
-  width: 260px;
+  width: auto;
   padding-bottom: 0;
   margin: 0;
   padding-top: 10px;
@@ -1487,13 +1483,11 @@ button,
 }
 @media (max-width: 1023px) {
   .catalog__item {
-    width: 309px;
     padding-top: 6px;
   }
 }
 @media (max-width: 767px) {
   .catalog__item {
-    width: 100%;
     padding-top: 14.5px;
   }
 }
@@ -1718,7 +1712,7 @@ button,
   .reservation__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 77px 173px 101px 175px;
+    padding: 77px 173px 102px 175px;
     gap: 32px;
   }
 }
@@ -2004,7 +1998,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   gap: 100px;
-  padding: 120px 103px 119px;
+  padding: 120px 103px;
 }
 @media (max-width: 1023px) {
   .contacts__container {
@@ -2023,7 +2017,7 @@ button,
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 59px 15px 95px;
+    padding: 59px 15px 94px;
   }
 }
 
@@ -2045,12 +2039,12 @@ button,
 }
 
 .contacts__description h2 {
-  margin: 0 0 32px;
   font-weight: 500;
   font-size: 18px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   line-height: 150%;
+  margin: 0 0 32px;
 }
 @media (max-width: 1023px) {
   .contacts__description h2 {
