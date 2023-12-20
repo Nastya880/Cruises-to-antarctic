@@ -124,7 +124,7 @@
           <div class="catalog__container container">
             <h2>Ближайшие круизы</h2>
             <ul class="catalog__list">
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
                   <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Астория'">
@@ -153,7 +153,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
                   <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Элайн'">
@@ -182,7 +182,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/atlantis.webp 1x, img/atlantis@2x.webp 2x">
                   <img src="img/atlantis@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Атлантис'">
@@ -211,7 +211,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/odissey.webp 1x, img/odissey@2x.webp 2x">
                   <img src="img/odissey@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Одиссей'">
@@ -240,7 +240,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/olympia.webp 1x, img/olympia@2x.webp 2x">
                   <img src="img/olympia@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Олимпия'">
@@ -269,7 +269,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/avrora.webp 1x, img/avrora@2x.webp 2x">
                   <img src="img/avrora@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Аврора'">
@@ -298,7 +298,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/leonor.webp 1x, img/leonor@2x.webp 2x">
                   <img src="img/leonor@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Леонор'">
@@ -327,7 +327,7 @@
                   <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
                   <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Минион - 1'">
@@ -374,9 +374,9 @@
               <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="name">Введите Ваше имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" pattern="(^[a-zA-Z]+$)|(^[А-Яа-яЁё\s]+$)" required>
+                <input type="text" name="name" id="name" placeholder="Имя" pattern="(^[a-zA-Z]+$)|(^[А-Яа-яЁё\s]+$)(^[-\s]+$)" required>
                 <label class="visually-hidden" for="phone">Введите Ваш Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="(8)[0-9]{10}" required>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="(^[0-9]+$)" required>
                 <label class="visually-hidden" for="email">Введите Ваш email</label>
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <div class="reservation__form-agreement">
@@ -392,28 +392,17 @@
           </div>
         </section>
 
-        <section class="contacts" id="contacts">
+        <section class="contacts" id="contacs">
           <div class="contacts__container container">
             <iframe src="https://www.google.com/maps/d/embed?mid=1J2v1i1yB2lsFcQsFxG3SdmelNqxuNu0&ehbc=2E312F&noprof=1" width="560" height="306" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contacts__description">
               <h2>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
-              <ul class="contacts__list">
-                <li class="contacts__item contacts__item--address">
-                  <svg width="18" height="22">
-                    <use xlink:href="img/sprite.svg#label"></use>
-                  </svg>
-                  <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
-                </li>
-                <li class="contacts__item contacts__item--phone">
-                  <svg width="19" height="19">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
-                  <p>8-800-200-00-00</p>
-                </li>
-              </ul>
+              <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
+              <a href="tel:88002000000" aria-label="88002000000">8-800-200-00-00</a>
             </div>
           </div>
         </section>
+
       </main>
       <footer class="footer">
         <div class="footer__container container">

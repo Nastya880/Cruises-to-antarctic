@@ -1,147 +1,96 @@
-.contacts {
-  background-color: $color-alice-blue;
-}
 
 .contacts__container {
   display: grid;
-  grid-template-columns: 560px 1fr;
-  gap: 100px;
+  grid-template-columns: 1.12fr 1fr;
   align-items: center;
-  padding: 0 103px;
-  margin-top: 120px;
-  margin-bottom: 119px;
+  gap: 100px;
+  padding: 120px 103px 119px;
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 0 45px;
-    margin-top: 99px;
-    margin-bottom: 101px;
+    gap: 28px;
+    padding: 100px 45px;
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
-    grid-template-areas: "description" "map";
-    gap: 0;
-    padding: 0 15px;
-    margin-top: 24px;
-    margin-bottom: 68px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 59px 15px 93px;
   }
 }
 
 .contacts iframe {
+  width: 100%;
+  height: 306px;
+
   @include vp-1023 {
     width: 324px;
     height: 335px;
   }
 
   @include vp-767 {
-    grid-area: map;
-    width: 100%;
     height: 316px;
   }
 }
 
-.contacts h2 {
+.contacts__description h2 {
+  margin: 0 0 32px;
   @include font($ff-montserrat, 500, 18px, $color-tangaroa, 150%);
+
+  @include vp-1023 {
+    margin: 0 0 28px;
+  }
+}
+
+.contacts__description address {
+  @include font($ff-montserrat, 400, 16px, $color-tangaroa, 150%);
   font-style: normal;
+  margin: 0;
+  margin-bottom: 21px;
+  position: relative;
+  padding-left: 28px;
 
   @include vp-1023 {
-    margin-top: 18px;
+    margin-bottom: 20px;
   }
 }
 
-.contacts__description {
-  display: grid;
-  grid-template-rows: 1fr;
-  min-height: 192px;
-  padding: 0;
-  margin-top: 14px;
+.contacts__description address::before {
+  content: "";
+  background-image: url("../img/svg/icon-label.svg");
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 22px;
 
   @include vp-1023 {
-    margin-top: 16px;
-  }
-
-  @include vp-767 {
-    grid-area: description;
+    top: 4px;
   }
 }
 
-.contacts__list {
-  list-style: none;
-  margin-top: 32px;
-  margin-left: -40px;
+.contacts__description a {
+  @include font($ff-montserrat, 400, 16px, $color-tangaroa, 150%);
+  margin: 0;
+  margin-bottom: 3px;
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
 
   @include vp-1023 {
-    margin-top: 28px;
-  }
-
-  @include vp-767 {
-    margin-top: 26px;
-  }
-}
-
-.contacts__item {
-  display: flex;
-  margin-bottom: 6px;
-
-  @include vp-1023 {
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 
   @include vp-767 {
     margin-bottom: 6px;
   }
-}
 
-.contacts__item svg {
-  fill: $color-tangaroa;
-  margin-right: 10px;
-  align-self: flex-start;
-}
-
-.contacts__item--phone svg {
-  margin-right: 9px;
-
-  @include vp-1023 {
-    width: 19px;
-    height: 20px;
-  }
-
-  @include vp-767 {
-    width: 17px;
-    height: 17px;
-    align-self: center;
-  }
-}
-
-.contacts__item--address svg {
-  @include vp-1023 {
-    width: 27px;
-    height: 31px;
-  }
-
-  @include vp-767 {
-    width: 27px;
-    height: 34px;
-  }
-}
-
-.contacts__item p,
-.contacts__item address {
-  @include font($ff-montserrat, 400, 16px, $color-tangaroa, 150%);
-  font-style: normal;
-  margin: 0;
-}
-
-.contacts__item address {
-  margin-bottom: 16px;
-
-  @include vp-1023 {
-    margin-bottom: 20px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 16px;
+  &::before {
+    content: "";
+    background-image: url("../img/svg/icon-phone.svg");
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
   }
 }
