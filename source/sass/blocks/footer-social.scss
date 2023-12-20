@@ -10,47 +10,27 @@
   @include vp-767 {
     margin-top: -18px;
     margin-right: 0;
-    margin-left: -28px;
-    align-self: flex-start;
+    margin-left: -26px;
   }
 }
 
 .footer__social-list {
   list-style: none;
-  min-width: 312px;
-  max-width: 312px;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 27px;
+  row-gap: 10px;
   flex-wrap: wrap;
+  margin-left: auto;
 
   @include vp-1023 {
-    min-width: 130px;
-    max-width: 130px;
+    column-gap: 22px;
   }
 
   @include vp-767 {
+    column-gap: 19.4px;
     max-width: 100%;
-  }
-}
-
-.footer__social-item {
-  margin-right: 27px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @include vp-1023 {
-    margin-right: 22.37px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  @include vp-767 {
-    margin-right: 22.7px;
-    margin-bottom: 10px;
   }
 }
 

@@ -1,8 +1,14 @@
 .footer__menu-list.menu-list {
   max-width: 100%;
+  padding: 0;
+  padding-left: 40px;
+
+  @include vp-1279 {
+    padding-left: 20px;
+  }
 
   @include vp-1023 {
-    max-width: 488px;
+    padding-left: 40px;
     margin-top: 14px;
   }
 
@@ -13,8 +19,6 @@
 }
 
 .footer__menu-item.menu-item {
-  margin-right: 33.5px;
-
   &:last-child {
     margin-right: 0;
   }

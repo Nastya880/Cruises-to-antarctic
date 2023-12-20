@@ -7,8 +7,8 @@
   margin-top: 122px;
   margin-bottom: 145px;
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 88px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 
   @include vp-1023 {
     padding: 0 44px 0 45px;
