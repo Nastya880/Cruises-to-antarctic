@@ -1488,7 +1488,10 @@ button,
 }
 @media (max-width: 767px) {
   .catalog__item {
+    width: 270px;
     padding-top: 14.5px;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -1707,6 +1710,13 @@ button,
   -ms-grid-columns: 47.4% 403px;
   grid-template-columns: 47.4% 403px;
   gap: 144px;
+}
+@media (max-width: 1279px) {
+  .reservation__container {
+    -ms-grid-columns: 1fr 50%;
+    grid-template-columns: 1fr 50%;
+    gap: 80px;
+  }
 }
 @media (max-width: 1023px) {
   .reservation__container {
